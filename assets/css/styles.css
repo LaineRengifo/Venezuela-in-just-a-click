@@ -9,6 +9,7 @@
 /* Override Bootstrap Colors */
 .navbar {
     background-color: var(--ocean-blue) !important;
+    margin: auto;
 }
 
 .btn-tropical {
