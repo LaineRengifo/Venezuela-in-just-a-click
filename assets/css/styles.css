@@ -1,0 +1,80 @@
+:root {
+    --ocean-blue: #0077b6;
+    --lush-green: #2d6a4f;
+    --sunset-orange: #FF6B35;
+    --sandy-beige: #F7F3E3;
+    --coral: #FF6F61;
+}
+
+/* Override Bootstrap Colors */
+.navbar {
+    background-color: var(--ocean-blue) !important;
+}
+
+.btn-tropical {
+    background-color: var(--sunset-orange);
+    color: white !important;
+    padding: 12px 30px;
+}
+
+.btn-tropical:hover {
+    background-color: #e65a2b;
+}
+
+/* General Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--sandy-beige);
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #0077b6; /* Ocean Blue */
+}
+
+.tropical-accent {
+    font-family: 'Pacifico', cursive;
+    color: var(--coral) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/beach-4-los-roques.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Gastronomy Section */
+.bg-sandy-beige {
+    background-color: #f7f3e3;
+}
+
+.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--lush-green);
+    color: white;
+}
+
+.social-icons a {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--coral) !important;
+}
