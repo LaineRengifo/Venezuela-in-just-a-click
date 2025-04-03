@@ -9,7 +9,19 @@
 /* Override Bootstrap Colors */
 .navbar {
     background-color: var(--ocean-blue) !important;
-    margin: auto;
+    
+}
+
+/* Adjust Navbar Brand Padding */
+.navbar-brand {
+    padding-left: 0; /* Remove extra padding on the left */
+    margin-left: -30px; /* Move the logo and text further to the left */
+    display: flex;
+    align-items: center; /* Ensure the logo and text are vertically aligned */
+}
+
+.navbar-brand img {
+    margin-right: 5px; /* Adjust spacing between the logo and the text */
 }
 
 .btn-tropical {
