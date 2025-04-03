@@ -44,12 +44,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-1">Welcome to Venezuela</h1>
-            <p class="lead fs-3">Your <span class="tropical-accent">Affordable Paradise</span> Awaits</p>
+    <section class="hero-section d-flex align-items-center" id="home">
+        <div class="container text-center text-white">
+            <h1 class="display-1 mb-4">Discover Venezuela</h1>
+            <p class="lead fs-3 mb-4">Your <span class="tropical-accent">Affordable Paradise</span> Awaits</p>
+            <a href="#pricing" class="btn btn-tropical btn-lg">Plan your dream trip today!</a>
         </div>
-    </header>
+    </section>
    
     <!-- Tropical Features -->
 
@@ -57,34 +58,96 @@
         <!-- Quick Highlights Grid -->
         <section class="py-5" id="explore">
             <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4 text-center">
-                <i class="bi bi-tropical-storm fs-1 text-success"></i>
-                <h3>7,000+ Islands & Beaches</h3>
-                <p>Snorkel in coral reefs or relax on red-sand shores</p>
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="bi bi-tropical-storm fs-2 text-success"></i>
+                        <h5>7,000+ Islands & Beaches</h5>
+                        <p>Immerse yourself in crystal-clear waters, explore vibrant coral reefs, or unwind on pristine red-sand beaches surrounded by breathtaking landscapes.</p>
+                        <a href="#beaches" class="btn btn-outline-success btn-sm mt-2">Explore Beaches</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="bi bi-cloud-lightning-rain fs-2 text-warning"></i>
+                        <h5>Catatumbo Lightning</h5>
+                        <p>Experience the world's most intense and unique lightning phenomenon, a natural wonder that illuminates the night sky over Lake Maracaibo.</p>
+                        <a href="#catatumbo" class="btn btn-outline-warning btn-sm mt-2">Learn More</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="bi bi-egg-fried fs-2 text-danger"></i>
+                        <h5>World-Class Cuisine</h5>
+                        <p>Delight in the rich flavors of Venezuela, from the iconic arepas and hearty pabellón criollo to an array of fresh tropical fruits and exotic dishes that tell a story of culture and tradition.</p>
+                        <a href="about.html#flavors" class="btn btn-outline-danger btn-sm mt-2">Discover Flavors</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <i class="bi bi-tree fs-2 text-primary"></i>
+                        <h5>Amazon Rainforest</h5>
+                        <p>Discover the unparalleled biodiversity of the Amazon, home to countless species of flora and fauna, and immerse yourself in the heart of one of the world's most vital ecosystems.</p>
+                        <a href="#amazon" class="btn btn-outline-primary btn-sm mt-2">Explore More</a>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center">
-                <i class="bi bi-cloud-lightning-rain fs-1 text-warning"></i>
-                <h3>Catatumbo Lightning</h3>
-                <p>Witness nature’s light show</p>
-                </div>
-                <div class="col-md-4 text-center">
-                <i class="bi bi-egg-fried fs-1 text-danger"></i>
-                <h3>World-Class Cuisine</h3>
-                <p>Arepas, pabellón, and fresh tropical fruits</p>
-                </div>
-            </div>
             </div>
         </section>
         
         <!-- Callout Banner -->
-        <section class="bg-lush-green text-black py-5">
+        <section class="bg-lush-green text-black py-4">
             <div id="Safe" class="container text-center">
-            <h2>Safe & Affordable</h2>
-            <p>Guided tours with 24/7 support. <a href="#safety" class="text-black">Learn more →</a></p>
+            <div class="col-lg-3 col-md-6 text-center">
+                <i class="bi bi-shield-check fs-2 text-success"></i>
+                <h5>Safe & Affordable</h5>
+                <p>Enjoy guided tours with 24/7 support, ensuring a safe, seamless, and unforgettable experience tailored to your needs.</p>
+                <a href="deals.html#safety" class="btn btn-outline-success btn-sm mt-2">Learn More</a>
+            </div>
             </div>
         </section>
     </main>
+    <!-- Testimonials section -->
+
+    <section id="testimonials" class="container section mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 text-md-start text-center">
+                <h2 class="display-6 fw-bold" style="font-family: 'Handlee', cursive;">Testimonials</h2>
+            </div>
+        </div>
+        <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="assets/images/alejandro in css.jpg" alt="Ccs Testimonial" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <p class="lead">"Our group of five had an unforgettable experience in Caracas. The guide Alejandro was incredibly knowledgeable and made the city come alive with its rich history and vibrant culture!"</p>
+                        <h5 class="fw-bold">Clementina Osono</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="assets/images/agustin in canaima.jpg" alt="Canaima Testimonial" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <p class="lead">"Our guide Agustin in Canaima was exceptional, leading our group of seven through breathtaking waterfalls and lush landscapes. It was an adventure we'll cherish forever!"</p>
+                        <h5 class="fw-bold">Oscar j. Landaeta</h5>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="assets/images/cesar in margarita.jpg" alt="Margarita Testimonial" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <p class="lead">"Our guide Cesar in Margarita was outstanding! He led our group of four through stunning beaches, vibrant local markets, and hidden gems. It was an unforgettable journey filled with adventure and relaxation!"</p>
+                        <h5 class="fw-bold">David Chavez</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="assets/images/Praticia in coro.jpg" alt="Los Roques Testimonial" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <p class="lead">"Patricia led our group of ten through the mesmerizing sand dunes of Los Médanos de Coro. The golden landscapes, thrilling sandboarding, and breathtaking sunsets made it an unforgettable adventure for everyone!"</p>
+                        <h5 class="fw-bold">Isabella Martinez</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
