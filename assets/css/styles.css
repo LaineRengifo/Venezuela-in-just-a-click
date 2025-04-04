@@ -130,6 +130,13 @@ h1, h2, h3 {
     padding: 0.5rem 1rem;
 }
 
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 1 0 auto !important; /* Allow the column to grow and shrink */
+        width: 100%; /* Remove the fixed width */
+    }
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     
@@ -149,8 +156,5 @@ h1, h2, h3 {
     .btn {
         font-size: 0.85rem;
         padding: 0.5rem 1rem;
-    }
-    .col-md-6 {
-        width: auto;
     }
 }
