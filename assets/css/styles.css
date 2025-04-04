@@ -15,7 +15,7 @@
 /* Adjust Navbar Brand Padding */
 .navbar-brand {
     padding-left: 0; /* Remove extra padding on the left */
-    margin-left: -30px; /* Move the logo and text further to the left */
+    margin-left: -10px; /* Move the logo and text further to the left */
     display: flex;
     align-items: center; /* Ensure the logo and text are vertically aligned */
 }
@@ -90,4 +90,67 @@ h1, h2, h3 {
 
 .social-icons a:hover {
     color: var(--coral) !important;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.rating {
+    color: #FFD700; /* Gold for stars */
+    font-size: 1rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007BFF; /* Bootstrap primary color */
+}
+
+.btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+    .col-md-6 {
+        width: auto;
+    }
 }
