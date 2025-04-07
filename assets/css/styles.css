@@ -15,7 +15,7 @@
 /* Adjust Navbar Brand Padding */
 .navbar-brand {
     padding-left: 0; /* Remove extra padding on the left */
-    margin-left: -10px; /* Move the logo and text further to the left */
+    margin-left: -5px; /* Move the logo and text further to the left */
     display: flex;
     align-items: center; /* Ensure the logo and text are vertically aligned */
 }
