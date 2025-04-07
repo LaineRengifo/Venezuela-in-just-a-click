@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venezuela - Tropical Paradise</title>
+    <title>Safety - Venezuela in Just a Click</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,84 +15,11 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-    <style>
-        :root {
-            --ocean-blue: #0077b6;
-            --lush-green: #2d6a4f;
-            --sunset-orange: #FF6B35;
-            --sandy-beige: #F7F3E3;
-            --coral: #FF6F61;
-        }
-
-        /* Override Bootstrap Colors */
-        .navbar {
-            background-color: var(--ocean-blue) !important;
-        }
-
-        .btn-tropical {
-            background-color: var(--sunset-orange);
-            color: white !important;
-            padding: 12px 30px;
-        }
-
-        .btn-tropical:hover {
-            background-color: #e65a2b;
-        }
-
-        /* Typography */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: var(--sandy-beige);
-        }
-
-        h1, h2, h3 {
-            font-family: 'Bebas Neue', cursive;
-        }
-
-        .tropical-accent {
-            font-family: 'Pacifico', cursive;
-            color: var(--coral) !important;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), url('assets/images/Los\ Roques\ islands\ in\ Venezuela.jpg') no-repeat center center);
-            background-size: cover;
-            height: 80vh;
-        }
-
-        /* Safety Section */
-        .safety-section {
-            background-color: var(--sandy-beige);
-            padding: 4rem 0;
-        }
-
-        /* Price Cards */
-        .price-card {
-            border: 3px solid var(--lush-green);
-            border-radius: 15px;
-        }
-
-        .price-badge {
-            background-color: var(--lush-green);
-            color: white;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--lush-green);
-            color: white;
-        }
-
-        .social-icons a {
-            color: white !important;
-            transition: 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: var(--coral) !important;
-        }
-    </style>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
 </head>
 <body>
     <!-- Navbar -->
@@ -99,9 +27,9 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/arepa.png" alt="Venezuela Logo" width="40">
-                <span class="h4 ms-2">Venezuela</span>
+                <span class="h4 ms-2">Venezuela in Just a Click</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -109,6 +37,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="deals.html">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="safety.html">Safety</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -116,73 +45,85 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center" id="home">
-        <div class="container text-center text-white">
-            <h1 class="display-1 mb-4">Discover Venezuela</h1>
-            <p class="lead fs-3 mb-4">Your <span class="tropical-accent">Affordable Paradise</span> Awaits</p>
-            <a href="#pricing" class="btn btn-tropical btn-lg">Explore Packages</a>
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-1">Travel Safe with Us</h1>
+            <p class="lead fs-3"><span class="tropical-accent">Your Safety is Our Priority</span></p>
         </div>
-    </section>
-
-    <!-- Tropical Features -->
-    <section class="py-5" id="about">
-        <div class="container">
-            <h2 class="text-center mb-5" style="color: var(--ocean-blue);">Why Choose Venezuela?</h2>
-            <div class="row g-4">
-                <div class="col-md-4 text-center">
-                    <i class="bi bi-tropical-storm fs-1 text-success"></i>
-                    <h3>Tropical Climate</h3>
-                    <p>Year-round sunshine & pristine beaches</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="bi bi-cash-coin fs-1 text-success"></i>
-                    <h3>Affordable Travel</h3>
-                    <p>Luxury experiences at budget prices</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="bi bi-shield-check fs-1 text-success"></i>
-                    <h3>Safe Tourism</h3>
-                    <p>24/7 dedicated visitor support</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </header>
 
     <!-- Safety Section -->
-    <section class="safety-section" id="safety">
+    <section class="safety-section py-5" id="safety">
         <div class="container">
             <h2 class="text-center mb-4" style="color: var(--lush-green);">Your Safety Comes First</h2>
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="p-4 bg-white rounded shadow">
-                        <h3><i class="bi bi-passport me-2"></i>Verified Guides</h3>
-                        <p>All tours include certified bilingual guides</p>
+                        <h3><i class="bi bi-geo-alt me-2 text-primary"></i>Verified Guides</h3>
+                        <p>All tours include certified bilingual guides who are trained to ensure your safety and comfort throughout your journey.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="p-4 bg-white rounded shadow">
-                        <h3><i class="bi bi-heart-pulse me-2"></i>Health Protocols</h3>
-                        <p>CDC-approved cleanliness standards</p>
+                        <h3><i class="bi bi-heart-pulse me-2 text-danger"></i>Health Protocols</h3>
+                        <p>We follow CDC-approved cleanliness standards and provide hand sanitizers, masks, and other safety essentials during your trip.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h3><i class="bi bi-shield-check me-2 text-success"></i>Travel Insurance</h3>
+                        <p>We offer optional travel insurance to cover unexpected events, ensuring peace of mind while you explore Venezuela.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h3><i class="bi bi-passport me-2 text-warning"></i>Visa Assistance</h3>
+                        <p>Our team provides guidance on visa requirements and helps you with the application process for a hassle-free experience.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   
+    <!-- Additional Information Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Additional Safety Tips</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h4><i class="bi bi-lock me-2 text-info"></i>Secure Your Belongings</h4>
+                        <p>Keep your valuables in a secure place and avoid displaying expensive items in public areas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h4><i class="bi bi-phone me-2 text-primary"></i>Stay Connected</h4>
+                        <p>Ensure your phone is charged and you have access to emergency contacts and local assistance numbers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h4><i class="bi bi-map me-2 text-success"></i>Plan Your Routes</h4>
+                        <p>Use trusted transportation services and plan your routes in advance to avoid unnecessary risks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2024 Venezuela Paradise</p>
+                    <p>&copy; 2025 Venezuela in Just a Click</p>
                 </div>
                 <div class="col-md-6 text-end">
                     <div class="social-icons">
-                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/584123213103"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
