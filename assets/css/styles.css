@@ -130,6 +130,16 @@ h1, h2, h3 {
     padding: 0.5rem 1rem;
 }
 
+.btn-outline-primary {
+    color: #0056b3; /* Darker blue for better contrast */
+    border-color: #0056b3;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
 @media (min-width: 768px) {
     .col-md-6 {
         flex: 1 0 auto !important; /* Allow the column to grow and shrink */

@@ -24,10 +24,10 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/arepa.png" alt="Venezuela Logo" width="40">
+                <img src="assets/images/arepa.png" alt="" width="40">
                 <span class="h4 ms-2">Venezuela in Just a Click</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -46,7 +46,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section">
+    <header class="hero-section d-flex align-items-center" id="home" aria-label="Discover Venezuela with breathtaking landscapes and affordable travel packages.">
         <div class="container text-center">
             <h1 class="display-1">About Venezuela</h1>
             <p class="lead fs-3"><span class="tropical-accent">Where the Andes Meet the Caribbean, and Lightning Illuminates the Night</span></p>
@@ -84,7 +84,7 @@
                 <h2 class="text-center mb-4">Flavors of Venezuela</h2>
                 <div class="row g-4">
                     <div class="col-md-3 text-center">
-                        <img src="assets/images/food-1-arepas.jpg" alt="Arepa" class="img-fluid rounded-circle mb-2" width="180">
+                        <img src="assets/images/food-1-arepas.jpg" alt="Traditional Venezuelan Arepa stuffed with cheese or meat" class="img-fluid rounded-circle mb-2" width="180">
                         <h4>Arepas</h4>
                         <p>Grilled corn cakes stuffed with cheese or meat</p>
                     </div>
@@ -114,11 +114,11 @@
                     <div class="col-md-6">
                         <div class="text-center">
                             <h2>The Everlasting Storm</h2>
-                            <p>Lake Maracaibo’s Catatumbo Lightning is a mesmerizing natural phenomenon, occurring up to 260 nights a year with over a million lightning strikes annually. This awe-inspiring display, visible from space, illuminates the night sky with unparalleled intensity, making it one of the most unique and breathtaking wonders of the natural world.</p>
+                            <p>Lake Maracaibo Catatumbo Lightning is a mesmerizing natural phenomenon, occurring up to 260 nights a year with over a million lightning strikes annually. This awe-inspiring display, visible from space, illuminates the night sky with unparalleled intensity, making it one of the most unique and breathtaking wonders of the natural world.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/images/catatumbo.jpg" alt="Catatumbo Lightning" class="img-fluid rounded" style="max-height: 400px; width: 100%; object-fit: cover;">
+                        <img src="assets/images/catatumbo.jpg" alt="Catatumbo Lightning" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
             <h2 class="display-6">Subscribe to Our Newsletter</h2>
             <p>Stay updated with our latest news and offers</p>
             <form class="d-flex justify-content-center mt-3">
-                <input type="email" class="form-control me-2" placeholder="Enter your email" aria-label="Email" style="width: 300px;">
+                <input type="email" class="form-control me-2" placeholder="Enter your email" required aria-label="Email address" style="width: 300px;">
                 <button class="btn btn-primary" type="submit">Subscribe</button>
             </form>
         </div>
@@ -154,9 +154,10 @@
                 </div>
                 <div class="col-md-6 text-end">
                     <div class="social-icons">
-                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="me-3" aria-label="Visit our Facebook page">
+                            <i class="bi bi-facebook"></i></a>
                         <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp" target="_blank"></i></a>
                     </div>
                 </div>
             </div>
