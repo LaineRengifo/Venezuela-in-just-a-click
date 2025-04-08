@@ -73,7 +73,6 @@ h1, h2, h3 {
 }
 
 .img-fluid {
-    max-height: 300px;
     object-fit: cover;
 }
 
