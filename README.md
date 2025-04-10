@@ -42,6 +42,7 @@ Welcome to **Venezuela in Just a Click**, a vibrant and visually captivating web
   - Coral (`#FF6F61`) for accents.
 
 ## 📂 Project Structure
+```
 venezuela-proyect/
 ├── assets/
 │   ├── css/
@@ -55,6 +56,7 @@ venezuela-proyect/
 ├── contact.html
 ├── success.html
 └── README.md
+```
 
 ## 🚀 Technologies Used
 
