@@ -10,8 +10,7 @@
 
 /* Override Bootstrap Colors */
 .navbar {
-    background-color: var(--ocean-blue) !important;
-    
+    background-color: var(--ocean-blue) !important; 
 }
 
 /* Adjust Navbar Brand Padding */
@@ -140,16 +139,17 @@ h1, h2, h3 {
     color: white;
 }
 
-@media (min-width: 768px) {
-    .col-md-6 {
-        flex: 1 0 auto !important; /* Allow the column to grow and shrink */
-        width: 100%; /* Remove the fixed width */
-    }
-}
-
-/* Responsive Adjustments */
+/* === ESTILOS BASE (MOBILE FIRST) === */
+/* (Se aplican a todos los dispositivos menores de 768px) */
+body {
+    font-size: 14px;
+    /* Tus estilos móviles aquí */
+  }
+  
+  /* === TABLETS (PORTRAIT) === */
+  
+  /* Responsive Adjustments */
 @media (max-width: 768px) {
-    
     .py-5 {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
@@ -201,3 +201,47 @@ h1, h2, h3 {
         padding: 0 4rem;
     }
 }
+@media (min-width: 576px) {
+    .barra{
+        max-width: 100%;
+    } 
+    .hero-section{
+        height: 60vh;
+    }
+    .btn {
+        font-size: 0.93rem;
+
+    }
+    .mt-5{
+        margin-top: 1rem !important;
+    }
+
+    .footer .row>* {
+        width: 50%;
+    }
+}
+
+.social-icons a {
+    display: inline-block; /* Ensures icons stay in line */
+}
+
+  /* === LAPTOPS PEQUEÑAS Y TABLETS LANDSCAPE === */
+  @media (min-width: 992px) {
+    body {
+      font-size: 16px;
+    }
+    /* Ajustes para pantallas medianas */
+  }
+  
+  /* === DESKTOPS Y LAPTOPS GRANDES === */
+  @media (min-width: 1200px) {
+    /* Estilos para pantallas grandes */
+  }
+  
+  /* === PANTALLAS EXTRA GRANDES (HD+) === */
+  @media (min-width: 1400px) {
+    body {
+      font-size: 17px;
+    }
+    /* Ajustes para monitores grandes */
+  }

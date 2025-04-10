@@ -83,3 +83,4 @@ Include a blog section for travel tips and stories.
 This project is licensed under the MIT License. Feel free to use and modify it as needed.
 
 Venezuela in Just a Click – Your gateway to discovering the wonders of Venezuela!
+
