@@ -37,6 +37,7 @@
 
 /* General Typography */
 body {
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--sandy-beige);
 }
@@ -137,10 +138,6 @@ h1, h2, h3 {
     color: white;
 }
 
-
-body {
-    font-size: 14px;
-  }
   
 @media (max-width: 768px) {
     .py-5 {
@@ -228,7 +225,9 @@ body {
 
 
   @media (min-width: 1200px) {
-   
+   body {
+    font-size: 16px;
+   }
   }
   
   
