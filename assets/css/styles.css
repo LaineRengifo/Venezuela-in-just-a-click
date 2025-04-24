@@ -77,21 +77,6 @@ h1, h2, h3 {
     object-fit: cover;
 }
 
-/* Footer */
-.footer {
-    background-color: var(--lush-green);
-    color: white;
-}
-
-.social-icons a {
-    color: white !important;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    color: var(--coral) !important;
-}
-
 /* Card Styling */
 .card {
     border: none;
@@ -138,6 +123,20 @@ h1, h2, h3 {
     color: white;
 }
 
+/* Footer */
+.footer {
+    background-color: var(--lush-green);
+    color: white;
+}
+
+.social-icons a {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--coral) !important;
+}
   
 @media (max-width: 768px) {
     .py-5 {
