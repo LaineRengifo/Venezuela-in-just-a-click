@@ -37,8 +37,7 @@
 
 /* General Typography */
 body {
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+
     background-color: var(--sandy-beige);
 }
 
@@ -97,11 +96,6 @@ h1, h2, h3 {
 .card-text {
     font-size: 0.95rem;
     color: #555;
-}
-
-.rating {
-    color: #FFD700; /* Gold for stars */
-    font-size: 1rem;
 }
 
 .price {
@@ -191,9 +185,7 @@ h1, h2, h3 {
     }
 }
 @media (min-width: 576px) {
-    .barra{
-        max-width: 100%;
-    } 
+   
     .hero-section{
         height: 60vh;
     }
@@ -213,26 +205,3 @@ h1, h2, h3 {
 .social-icons a {
     display: inline-block; /* Ensures icons stay in line */
 }
-
- 
-  @media (min-width: 992px) {
-    body {
-      font-size: 16px;
-    }
-   
-  }
-
-
-  @media (min-width: 1200px) {
-   body {
-    font-size: 16px;
-   }
-  }
-  
-  
-  @media (min-width: 1400px) {
-    body {
-      font-size: 17px;
-    }
-   
-  }
