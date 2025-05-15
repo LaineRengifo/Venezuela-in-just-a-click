@@ -1,6 +1,15 @@
 # Venezuela-in-just-a-click
 Welcome to **Venezuela in Just a Click**, a vibrant and visually captivating website designed to showcase the beauty, culture, and travel opportunities of Venezuela. This project highlights the country's breathtaking landscapes, rich traditions, and exclusive travel deals, making it the perfect platform for anyone planning their dream trip to Venezuela.
 
+## Table of Contents
+- [Homepage](#homepage)
+- [About Page](#about-page)
+- [Deals Page](#deals-page)
+- [Safety Page](#safety-page)
+- [Contact Page](#contact-page)
+- [Responsive Design](#responsive-design)
+- [Testing](#testing)
+
 ## 🌟 Features
 
 ### 1. **Home Page**
@@ -12,6 +21,7 @@ Welcome to **Venezuela in Just a Click**, a vibrant and visually captivating web
    - A detailed introduction to Venezuela's natural wonders, cultural heritage, and gastronomy.
    - Sections on music, festivals, and traditional foods like arepas and pabellón criollo.
    - Information about unique phenomena like the Catatumbo Lightning.
+   ![About Page Screenshot](assets/images/screenshot-about-desktop.png)
 
 ### 3. **Deals Page**
    - Exclusive travel packages for beaches, mountains, deserts, and the Amazon.
@@ -73,14 +83,35 @@ venezuela-proyect/
    git clone https://github.com/your-username/Venezuela-in-just-a-click.git
 ```
 
-📋 Future Enhancements
-Add a fully functional backend for form submissions.
-Implement a dynamic booking system.
-Add more destinations and travel packages.
-Include a blog section for travel tips and stories.
+## Responsive Design
 
-📝 License
-This project is licensed under the MIT License. Feel free to use and modify it as needed.
+### Tablet View
+![Tablet Screenshot](assets/images/screenshot-home-tablet.png)
 
-Venezuela in Just a Click – Your gateway to discovering the wonders of Venezuela!
+### Mobile View
+![Mobile Screenshot](assets/images/screenshot-home-mobile.png)
 
+![Homepage Screenshot](assets/images/screenshot-home-desktop.png)
+
+## Testing
+
+- HTML validated with [W3C Validator](https://validator.w3.org/)
+- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- Performance tested with Lighthouse
+
+![HTML Validation](assets/images/html-validation.png)
+![CSS Validation](assets/images/css-validation.png)
+
+
+
+
+
+
+
+
+
+
+📝 LicenseInclude a blog section for travel tips and stories.Add more destinations and travel packages.Implement a dynamic booking system.Add a fully functional backend for form submissions.Venezuela in Just a Click – Your gateway to discovering the wonders of Venezuela!📋 Future Enhancements![Lighthouse Performance](assets/images/lighthouse-performance.png)
+
+
+This project is licensed under the MIT License. Feel free to use and modify it as needed.📝 LicenseInclude a blog section for travel tips and stories.Add more destinations and travel packages.

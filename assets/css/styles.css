@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&family=Pacifico&display=swap');
 
+/* CSS Variables for consistent color palette */
 :root {
     --ocean-blue: #0077b6;
     --lush-green: #2d6a4f;
@@ -8,48 +10,41 @@
     --coral: #FF6F61;
 }
 
-/* Override Bootstrap Colors */
+/* Navbar Styles */
 .navbar {
     background-color: var(--ocean-blue) !important; 
 }
-
-/* Adjust Navbar Brand Padding */
 .navbar-brand {
-    padding-left: 0; /* Remove extra padding on the left */
-    margin-left: -5px; /* Move the logo and text further to the left */
+    padding-left: 0;
+    margin-left: -5px;
     display: flex;
-    align-items: center; /* Ensure the logo and text are vertically aligned */
+    align-items: center;
 }
-
 .navbar-brand img {
-    margin-right: 5px; /* Adjust spacing between the logo and the text */
+    margin-right: 5px;
 }
 
+/* Custom Button Styles */
 .btn-tropical {
     background-color: var(--sunset-orange);
     color: white !important;
     padding: 12px 30px;
 }
-
 .btn-tropical:hover {
     background-color: #e65a2b;
 }
 
-/* General Typography */
+/* Typography */
 body {
-
     background-color: var(--sandy-beige);
 }
-
 h1, h2, h3 {
     font-family: 'Bebas Neue', cursive;
 }
-
 .section-title {
     font-size: 2.5rem;
-    color: #0077b6; /* Ocean Blue */
+    color: #0077b6;
 }
-
 .tropical-accent {
     font-family: 'Pacifico', cursive;
     color: var(--coral) !important;
@@ -82,22 +77,18 @@ h1, h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .card-title {
     font-size: 1.2rem;
     font-weight: bold;
 }
-
 .card-text {
     font-size: 0.95rem;
     color: #555;
 }
-
 .price {
     font-size: 1.1rem;
     font-weight: bold;
@@ -106,15 +97,19 @@ h1, h2, h3 {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
 }
-
 .btn-outline-primary {
-    color: #0056b3; /* Darker blue for better contrast */
+    color: #0056b3;
     border-color: #0056b3;
 }
-
 .btn-outline-primary:hover {
     background-color: #0056b3;
     color: white;
+}
+
+/* Accessibility: Focus Styles */
+a:focus, button:focus, .btn:focus {
+    outline: 3px solid var(--sunset-orange);
+    outline-offset: 2px;
 }
 
 /* Footer */
@@ -122,35 +117,31 @@ h1, h2, h3 {
     background-color: var(--lush-green);
     color: white;
 }
-
 .social-icons a {
     color: white !important;
     transition: 0.3s;
+    display: inline-block; /* Ensures icons stay in line */
 }
-
 .social-icons a:hover {
     color: var(--coral) !important;
 }
-  
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .py-5 {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
     }
-
     .card-title {
         font-size: 1rem;
     }
-
     .card-text {
         font-size: 0.9rem;
     }
-
     .btn {
         font-size: 0.85rem;
         padding: 0.5rem 1rem;
     }
-
     #container-deals {
         display: flex;
         flex-direction: column;
@@ -163,20 +154,16 @@ h1, h2, h3 {
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
     }
-
     .card-title {
         font-size: 1rem;
     }
-
     .card-text {
         font-size: 0.9rem;
     }
-
     .btn {
         font-size: 0.85rem;
         padding: 0.5rem 1rem;
     }
-
     #container-deals {
         display: flex;
         flex-direction: column;
@@ -185,23 +172,27 @@ h1, h2, h3 {
     }
 }
 @media (min-width: 576px) {
-   
-    .hero-section{
+    .hero-section {
         height: 60vh;
     }
     .btn {
         font-size: 0.93rem;
-
     }
-    .mt-5{
+    .mt-5 {
         margin-top: 1rem !important;
     }
-
     .footer .row>* {
         width: 50%;
     }
 }
 
-.social-icons a {
-    display: inline-block; /* Ensures icons stay in line */
+/* Carousel Arrows: Smaller, no gray background, visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
