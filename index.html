@@ -9,6 +9,7 @@
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&family=Pacifico&display=swap">
@@ -31,7 +32,7 @@
     <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/arepa.png" alt="Venezuela Logo" width="40" height="40" class="d-inline-block align-text-top" loading="lazy"/>
+                <img src="assets/images/arepa.png" alt="Venezuela Logo" width="40" height="40" class="d-inline-block align-text-top" loading="lazy">
                 <span class="h4 ms-2">Venezuela in Just a Click</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,17 +87,17 @@
                             <p>Grilled corn cakes stuffed with cheese or meat</p>
                         </div>
                         <div class="col-md-3 text-center">
-                            <img src="assets/images/food-2-pabellon.webp" alt="Arepa" class="img-fluid rounded-circle mb-2" width="180">
+                            <img src="assets/images/food-2-pabellon.webp" alt="Pabellón Criollo" class="img-fluid rounded-circle mb-2" width="180">
                             <h4>Pabellón</h4>
                             <p>Grilled corn cakes stuffed with cheese or meat</p>
                         </div>
                         <div class="col-md-3 text-center">
-                            <img src="assets/images/food-3-pan-de-jamon.webp" alt="Arepa" class="img-fluid rounded-circle mb-2" width="180">
+                            <img src="assets/images/food-3-pan-de-jamon.webp" alt="Pan de Jamón" class="img-fluid rounded-circle mb-2" width="180">
                             <h4>Pan de Jamon</h4>
                             <p>Grilled corn cakes stuffed with cheese or meat</p>
                         </div>
                         <div class="col-md-3 text-center">
-                            <img src="assets/images/food-4-empanads.webp" alt="Arepa" class="img-fluid rounded-circle mb-2" width="180">
+                            <img src="assets/images/food-4-empanads.webp" alt="Empanadas" class="img-fluid rounded-circle mb-2" width="180">
                             <h4>Empanadas</h4>
                             <p>Grilled corn cakes stuffed with cheese or meat</p>
                         </div>
@@ -122,7 +123,7 @@
         </section>
     
         <section id="Packages" class="bg-light py-5">
-            <div class="container">
+          <div class="container">
               <h2 class="mb-4 text-center">Explore Our Packages</h2>
               <p class="text-muted mb-4 text-center">Discover the best of Venezuela with our exclusive travel packages.</p>
             <div id="Beaches" class="container">
@@ -132,7 +133,7 @@
               <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/los-roques.webp" class="card-img-top" alt="Los Roques Beach" loading="lazy"/>
+                    <img src="assets/images/los-roques.webp" class="card-img-top" alt="Los Roques Beach" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Los Roques</h5>
                       <p class="price">$500 per person</p>
@@ -142,7 +143,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/isla-margarita.webp" class="card-img-top" alt="Margarita Island" loading="lazy"/>
+                    <img src="assets/images/isla-margarita.webp" class="card-img-top" alt="Margarita Island" loading="lazy">
                     <div class="card-body text-center">
                         <h5 class="card-title">Margarita Island</h5>
                       <p class="price">$450 per person</p>
@@ -152,7 +153,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/beach-1-morrocoy-islands.webp" class="card-img-top" alt="Cayo de Agua Beach" loading="lazy"/>
+                    <img src="assets/images/beach-1-morrocoy-islands.webp" class="card-img-top" alt="Cayo de Agua Beach" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Cayo de Agua</h5>
                       <p class="price">$400 per person</p>
@@ -162,7 +163,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/playa-medina.webp" class="card-img-top" alt="Playa Medina Beach" loading="lazy"/>
+                    <img src="assets/images/playa-medina.webp" class="card-img-top" alt="Playa Medina Beach" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Playa Medina</h5>
                       <p class="price">$350 per person</p>
@@ -172,6 +173,7 @@
                 </div>
               </div>
             </div>
+          </div>
         </section>
     
         <section class="bg-light py-5">
@@ -182,7 +184,7 @@
               <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/el-pico-bolivar.webp" class="card-img-top" alt="Andes Peaks" loading="lazy"/>
+                    <img src="assets/images/el-pico-bolivar.webp" class="card-img-top" alt="Andes Peaks" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Andes Peaks</h5>
                       <p class="card-text fw-bold fs-5">$600 per person</p>
@@ -192,7 +194,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/merida-cable-car.webp" class="card-img-top" alt="Mérida Cable Car" loading="lazy"/>
+                    <img src="assets/images/merida-cable-car.webp" class="card-img-top" alt="Mérida Cable Car" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Mérida Cable Car</h5>
                       <p class="card-text fw-bold fs-5">$550 per person</p>
@@ -202,7 +204,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/medanos-de-coro-without-people.webp" class="card-img-top" alt="Medanos de Coro" loading="lazy"/>
+                    <img src="assets/images/medanos-de-coro-without-people.webp" class="card-img-top" alt="Medanos de Coro" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Coro</h5>
                       <p class="card-text fw-bold fs-5">$500 per person</p>
@@ -212,7 +214,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/mucibaji.webp" class="card-img-top" alt="Mucubají Lagoon" loading="lazy"/>
+                    <img src="assets/images/mucibaji.webp" class="card-img-top" alt="Mucubají Lagoon" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Mucubají Lagoon</h5>
                       <p class="card-text fw-bold fs-5">$450 per person</p>
@@ -232,7 +234,7 @@
               <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/canaima-national-park.webp" class="card-img-top" alt="Canaima National Park" loading="lazy"/>
+                    <img src="assets/images/canaima-national-park.webp" class="card-img-top" alt="Canaima National Park" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Canaima Park</h5>
                       <p class="card-text fw-bold fs-5">$700 per person</p>
@@ -242,7 +244,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/angels-falls-with-a-blue-sky.webp" class="card-img-top" alt="Angel Falls" loading="lazy"/>
+                    <img src="assets/images/angels-falls-with-a-blue-sky.webp" class="card-img-top" alt="Angel Falls" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Angel Falls</h5>
                       <p class="card-text fw-bold fs-5">$650 per person</p>
@@ -252,7 +254,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/orinoco-river.webp" class="card-img-top" alt="Orinoco Delta" loading="lazy"/>
+                    <img src="assets/images/orinoco-river.webp" class="card-img-top" alt="Orinoco Delta" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Orinoco Delta</h5>
                       <p class="card-text fw-bold fs-5">$600 per person</p>
@@ -262,7 +264,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card">
-                    <img src="assets/images/monte-roraima.webp" class="card-img-top" alt="Amazon River" loading="lazy"/>
+                    <img src="assets/images/monte-roraima.webp" class="card-img-top" alt="Amazon River" loading="lazy">
                     <div class="card-body text-center">
                       <h5 class="card-title">Amazon River</h5>
                       <p class="card-text fw-bold fs-5">$550 per person</p>
@@ -285,19 +287,19 @@
                     <div id="carouselBeachPackage" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="assets/images/beach-1-morrocoy-islands.webp" class="d-block w-100" alt="Ultimate Beach Package 1"/>
+                          <img src="assets/images/beach-1-morrocoy-islands.webp" class="d-block w-100" alt="Ultimate Beach Package 1">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/beach-2-la-guaira.webp" class="d-block w-100" alt="Ultimate Beach Package 2"/>
+                          <img src="assets/images/beach-2-la-guaira.webp" class="d-block w-100" alt="Ultimate Beach Package 2">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/beach-3-boat.webp" class="d-block w-100" alt="Ultimate Beach Package 3"/>
+                          <img src="assets/images/beach-3-boat.webp" class="d-block w-100" alt="Ultimate Beach Package 3">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/cayo-sombrero.webp" class="d-block w-100" alt="Ultimate Beach Package 4"/>
+                          <img src="assets/images/cayo-sombrero.webp" class="d-block w-100" alt="Ultimate Beach Package 4">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/isla-margarita.webp" class="d-block w-100" alt="Ultimate Beach Package 5"/>
+                          <img src="assets/images/isla-margarita.webp" class="d-block w-100" alt="Ultimate Beach Package 5">
                         </div>
                       </div>
                     </div>
@@ -313,19 +315,19 @@
                     <div id="carouselMountainAdventure" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="assets/images/medanos-de-coro.webp" class="d-block w-100" alt="Mountain Adventure 1"/>
+                          <img src="assets/images/medanos-de-coro.webp" class="d-block w-100" alt="Mountain Adventure 1">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/mucibaji.webp" class="d-block w-100" alt="Mountain Adventure 2"/>
+                          <img src="assets/images/mucibaji.webp" class="d-block w-100" alt="Mountain Adventure 2">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/medanos-de-coro-without-people.webp" class="d-block w-100" alt="Mountain Adventure 3"/>
+                          <img src="assets/images/medanos-de-coro-without-people.webp" class="d-block w-100" alt="Mountain Adventure 3">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/merida-cable.webp" class="d-block w-100" alt="Mountain Adventure 4"/>
+                          <img src="assets/images/merida-cable.webp" class="d-block w-100" alt="Mountain Adventure 4">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/pico-bolivar.webp" class="d-block w-100" alt="Mountain Adventure 5"/>
+                          <img src="assets/images/pico-bolivar.webp" class="d-block w-100" alt="Mountain Adventure 5">
                         </div>
                       </div>
                     </div>
@@ -341,19 +343,19 @@
                     <div id="carouselAmazonExpedition" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="assets/images/canaima-national-park.webp" class="d-block w-100" alt="Amazon Expedition 1"/>
+                          <img src="assets/images/canaima-national-park.webp" class="d-block w-100" alt="Amazon Expedition 1">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/angels-falls-with-a-blue-sky.webp" class="d-block w-100" alt="Amazon Expedition 2"/>
+                          <img src="assets/images/angels-falls-with-a-blue-sky.webp" class="d-block w-100" alt="Amazon Expedition 2">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/jungle-amazon.webp" class="d-block w-100" alt="Amazon Expedition 3"/>
+                          <img src="assets/images/jungle-amazon.webp" class="d-block w-100" alt="Amazon Expedition 3">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/monte-roraima.webp" class="d-block w-100" alt="Amazon Expedition 4"/>
+                          <img src="assets/images/monte-roraima.webp" class="d-block w-100" alt="Amazon Expedition 4">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/orinoco-river.webp" class="d-block w-100" alt="Amazon Expedition 5"/>
+                          <img src="assets/images/orinoco-river.webp" class="d-block w-100" alt="Amazon Expedition 5">
                         </div>
                       </div>
                     </div>
@@ -369,28 +371,28 @@
                     <div id="carouselVenezuelaHighlights" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="assets/images/beach-2-la-guaira.webp" class="d-block w-100" alt="Venezuela Highlights 1"/>
+                          <img src="assets/images/beach-2-la-guaira.webp" class="d-block w-100" alt="Venezuela Highlights 1">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/catatumbo.webp" class="d-block w-100" alt="Venezuela Highlights 2"/>
+                          <img src="assets/images/catatumbo.webp" class="d-block w-100" alt="Venezuela Highlights 2">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/orange.webp" class="d-block w-100" alt="Venezuela Highlights 3"/>
+                          <img src="assets/images/orange.webp" class="d-block w-100" alt="Venezuela Highlights 3">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/culture-1-tambor.webp" class="d-block w-100" alt="Venezuela Highlights 4"/>
+                          <img src="assets/images/culture-1-tambor.webp" class="d-block w-100" alt="Venezuela Highlights 4">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/el-pico-bolivar.webp" class="d-block w-100" alt="Venezuela Highlights 5"/>
+                          <img src="assets/images/el-pico-bolivar.webp" class="d-block w-100" alt="Venezuela Highlights 5">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/medanos-de-coro.webp" class="d-block w-100" alt="Venezuela Highlights 5"/>
+                          <img src="assets/images/medanos-de-coro.webp" class="d-block w-100" alt="Venezuela Highlights 5">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/monte-roraima.webp" class="d-block w-100" alt="Venezuela Highlights 5"/>
+                          <img src="assets/images/monte-roraima.webp" class="d-block w-100" alt="Venezuela Highlights 5">
                         </div>
                         <div class="carousel-item">
-                          <img src="assets/images/maiquetia.webp" class="d-block w-100" alt="Venezuela Highlights 5"/>
+                          <img src="assets/images/maiquetia.webp" class="d-block w-100" alt="Venezuela Highlights 5">
                         </div>
                       </div>
                     </div>
@@ -400,6 +402,23 @@
                       <a href="contact.html" class="btn btn-danger">Book Now</a>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+              <div class="currency-converter card p-3 m-3 w-100" style="max-width: 400px;">
+                <h5 class="text-center">Currency Converter</h5>
+                <div class="input-group mb-2">
+                    <input type="number" id="usdAmount" class="form-control" placeholder="Amount">
+                    <select id="currencySelect" class="form-select" style="max-width: 120px;">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="COP">COP</option>
+                    </select>
+                    <span class="input-group-text">→</span>
+                    <input type="text" id="vesAmount" class="form-control" readonly placeholder="VES">
                 </div>
               </div>
             </div>
@@ -416,7 +435,7 @@
         </div>
         <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="assets/images/alejandro-in-css.webp" alt="Ccs Testimonial" class="rounded-circle mb-3" style="width: 160px; height: 160px; object-fit: cover;">
                         <p class="lead">"Our group of five had an unforgettable experience in Caracas. The guide Alejandro was incredibly knowledgeable and made the city come alive with its rich history and vibrant culture!"</p>
@@ -430,7 +449,7 @@
                         <h5 class="fw-bold">Oscar j. Landaeta</h5>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="assets/images/cesar-in-margarita.webp" alt="Margarita Testimonial" class="rounded-circle mb-3" style="width: 160px; height: 160px; object-fit: cover;">
                         <p class="lead">"Our guide Cesar in Margarita was outstanding! He led our group of four through stunning beaches, vibrant local markets, and hidden gems. It was an unforgettable journey filled with adventure and relaxation!"</p>
@@ -455,6 +474,18 @@
             </button>
         </div>
     </section>
+
+    <div class="live-chat">
+        <button class="btn btn-success rounded-pill shadow" onclick="openChat()">
+            <i class="bi bi-chat-dots"></i> Need Help?
+        </button>
+        <div id="chatBox" class="d-none p-3">
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Type your message..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm">Send</button>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
@@ -475,7 +506,74 @@
             </div>
         </div>
     </footer>
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="fixed-bottom bg-dark text-white p-3 d-none">
+    <div class="container d-flex align-items-center justify-content-between">
+        <span>We use cookies to enhance your experience.</span>
+        <button class="btn btn-sm btn-primary" onclick="acceptCookies()">Accept</button>
+    </div>
+    </div>
 
-    <script rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Book <span id="modalPackageTitle"></span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <!-- booking form  -->
+                <div id="bookingSuccessMsg" class="alert alert-success text-center d-none" role="alert">
+                    Booking submitted successfully!
+                </div>
+                <form id="bookingForm">
+                    <div class="mb-3">
+                        <label for="bookingName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="bookingName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookingEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="bookingEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookingPhone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="bookingPhone" required>
+                    </div>
+                    <div>
+                        <label for="bookingMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="bookingMessage" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookingDate" class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" id="bookingDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookingGuests" class="form-label">Number of Guests</label>
+                        <input type="number" class="form-control" id="bookingGuests" min="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookingSpecialRequests" class="form-label">Special Requests</label>
+                        <textarea class="form-control" id="bookingSpecialRequests" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bookingTerms" class="form-check-label">
+                            <input type="checkbox" class="form-check-input" id="bookingTerms" required>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

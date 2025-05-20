@@ -10,6 +10,7 @@
     
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
@@ -33,7 +34,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/arepa.png" alt="Venezuela Logo" width="40">
-                <span class="h4 ms-2" href="#index.html">Venezuela in Just a Click</span>
+                <span class="h4 ms-2">Venezuela in Just a Click</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -58,19 +59,18 @@
         </div>
     </header>
     <main>
-
         <!-- Introduction to Venezuela -->
         <section class="py-5 bg-light">
-        <div class="container">
-        <h2 class="text-center">Discover Venezuela</h2>
-        <p class="lead text-center">Venezuela is a land of breathtaking contrasts, where nature and culture intertwine to create an unforgettable experience. The Andes rise majestically in the west, offering snow-capped peaks and picturesque villages, while the Caribbean coastline dazzles with turquoise waters, pristine beaches, and vibrant coral reefs. Venture into the heart of the Amazon rainforest, where exotic wildlife and lush greenery thrive, or explore the vast plains of Los Llanos, home to incredible biodiversity and traditional cowboy culture.</p>
-        <p class="lead text-center">This is a country of superlatives: the world's tallest waterfall, Angel Falls, cascades from the tabletop mountains of Canaima National Park, and the mysterious Catatumbo Lightning illuminates the skies over Lake Maracaibo in a nightly spectacle. Beyond its natural wonders, Venezuela boasts a rich cultural heritage, from colonial towns steeped in history to the lively rhythms of joropo music and colorful festivals that bring communities together. Savor the flavors of its cuisine, from the iconic arepas to the festive hallacas, and feel the warmth and hospitality of its people. Venezuela invites you to embark on a journey of discovery, where every corner reveals a new story waiting to be told.</p>
-        </div>
+            <div class="container">
+            <h2 class="text-center">Discover Venezuela</h2>
+            <p class="lead text-center">Venezuela is a land of breathtaking contrasts, where nature and culture intertwine to create an unforgettable experience. The Andes rise majestically in the west, offering snow-capped peaks and picturesque villages, while the Caribbean coastline dazzles with turquoise waters, pristine beaches, and vibrant coral reefs. Venture into the heart of the Amazon rainforest, where exotic wildlife and lush greenery thrive, or explore the vast plains of Los Llanos, home to incredible biodiversity and traditional cowboy culture.</p>
+            <p class="lead text-center">This is a country of superlatives: the world's tallest waterfall, Angel Falls, cascades from the tabletop mountains of Canaima National Park, and the mysterious Catatumbo Lightning illuminates the skies over Lake Maracaibo in a nightly spectacle. Beyond its natural wonders, Venezuela boasts a rich cultural heritage, from colonial towns steeped in history to the lively rhythms of joropo music and colorful festivals that bring communities together. Savor the flavors of its cuisine, from the iconic arepas to the festive hallacas, and feel the warmth and hospitality of its people. Venezuela invites you to embark on a journey of discovery, where every corner reveals a new story waiting to be told.</p>
+            </div>
         </section>
         <!-- Quick Highlights Grid -->
         <section class="py-5" id="explore">
-        <div class="container">
-            <div class="row g-4">
+            <div class="container">
+                <div class="row g-4">
                 <div class="col-lg-4 col-md-6 text-center">
                     <i class="bi bi-tropical-storm fs-1 text-primary"></i> <!-- Larger Icon -->
                     <h5 class="mt-4 fs-4">7,000+ Islands & Beaches</h5> <!-- Larger Heading -->
@@ -107,17 +107,24 @@
                     <p class="fs-5">Enjoy expertly guided tours with round the clock support, ensuring a safe, seamless, and unforgettable experience that caters to your every need and exceeds expectations.</p>
                     <a href="safety.html" class="btn btn-outline-success btn-lg mt-3">Learn More</a> <!-- Larger Button -->
                 </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <section class="py-5 text-center bg-sandy-beige">
         <div class="container">
         <h2 class="mb-4">Ready to Explore Venezuela?</h2>
         <p class="lead mb-4">Check out our exclusive travel deals and start planning your dream trip today!</p>
-        <a href="#Packages" class="btn btn-outline-primary btn-sm mt-2">View Deals</a>
+        <a href="index.html#Packages" class="btn btn-outline-primary btn-sm mt-2">View Packages</a>
         </div>
     </section>
-   
+    <!-- Add this section after main content -->
+    <section class="py-5">
+        <div class="container">
+            <h2>Interactive Map</h2>
+            <div id="venezuelaMap" style="height: 500px"></div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="footer py-4">
         <div class="container">
@@ -140,5 +147,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
